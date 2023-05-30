@@ -41,7 +41,7 @@ public class ConsultaController {
             if(achouPar) {
                 valorConsultas += consultasAgrupadas.get(indexPar).getValorTotalConsultas();
                 ArrayList<Consulta> consultasVetAgrupadas = new ArrayList<>();
-                consultasVetAgrupadas.addAll(new ArrayList<>(consultasAgrupadas.get(indexPar).getConsultas()));
+                consultasVetAgrupadas.addAll(consultasAgrupadas.get(indexPar).getConsultas());
                 consultasVetAgrupadas.add(consultaAtual);
                 Veterinario veterinarioAtualizado = new Veterinario(consultaAtual.getNomeVeterinario(), valorConsultas, consultasVetAgrupadas);
                 consultasAgrupadas.set(indexPar, veterinarioAtualizado);
