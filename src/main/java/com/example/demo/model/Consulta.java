@@ -1,10 +1,18 @@
 package com.example.demo.model;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 public class Consulta {
-    String nomeAnimal;
-    String especie;
-    Double valorConsulta;
-    String nomeVeterinario;
+    @NotNull
+    private String nomeAnimal;
+    @NotNull
+    private String especie;
+    @NotNull
+    private Double valorConsulta;
+    @NotNull
+    private String nomeVeterinario;
 
     Consulta(String nomeAnimal, String especie, Double valorConsulta, String nomeVeterinario) {
         this.nomeAnimal = nomeAnimal;

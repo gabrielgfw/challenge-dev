@@ -1,11 +1,20 @@
 package com.example.demo.model;
 
-public class Veterinario {
-    String nomeVeterinario;
-    Double valorTotalConsultas;
-    Consulta[] consultas;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 
-    public Veterinario(String nomeVeterinario, Double valorTotalConsultas, Consulta[] consultas) {
+import java.util.List;
+
+public class Veterinario {
+    @NotNull
+    private String nomeVeterinario;
+    @NotNull
+    private Double valorTotalConsultas;
+    @NotNull
+    @Valid
+    private List<Consulta> consultas;
+
+    public Veterinario(String nomeVeterinario, Double valorTotalConsultas, List<Consulta> consultas) {
         this.nomeVeterinario = nomeVeterinario;
         this.valorTotalConsultas = valorTotalConsultas;
         this.consultas = consultas;
@@ -27,11 +36,11 @@ public class Veterinario {
         this.valorTotalConsultas = valorTotalConsultas;
     }
 
-    public Consulta[] getConsultas() {
+    public List<Consulta> getConsultas() {
         return consultas;
     }
 
-    public void setConsultas(Consulta[] consultas) {
+    public void setConsultas(List<Consulta> consultas) {
         this.consultas = consultas;
     }
 }
