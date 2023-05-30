@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "f744b628-19cb-404c-bea5-02b6b01838f7",
+		"name": "Desafio Paytrack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17490947"
+	},
+	"item": [
+		{
+			"name": "Agrupar consultas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"nomeAnimal\": \"Ted\",\r\n    \"especie\": \"Cachorro\",\r\n    \"nomeVeterinario\": \"Maria da Silva\",\r\n    \"valorConsulta\": 215.93\r\n  },\r\n  {\r\n    \"nomeAnimal\": \"Bob\",\r\n    \"especie\": \"Gato\",\r\n    \"nomeVeterinario\": \"Adailton Santos de Oliveira\",\r\n    \"valorConsulta\": 340.08\r\n  },\r\n  {\r\n    \"nomeAnimal\": \"Duque\",\r\n    \"especie\": \"Cachorro\",\r\n    \"nomeVeterinario\": \"Maria da Silva\",\r\n    \"valorConsulta\": 45.6\r\n  },\r\n  {\r\n    \"nomeAnimal\": \"Suzi\",\r\n    \"especie\": \"Cachorro\",\r\n    \"nomeVeterinario\": \"Gabriel Lima\",\r\n    \"valorConsulta\": 300\r\n  },\r\n  {\r\n    \"nomeAnimal\": \"Matias\",\r\n    \"especie\": \"Gato\",\r\n    \"nomeVeterinario\": \"Adailton Santos de Oliveira\",\r\n    \"valorConsulta\": 1110.4\r\n  },\r\n  {\r\n    \"nomeAnimal\": \"Miau\",\r\n    \"especie\": \"Gato\",\r\n    \"nomeVeterinario\": \"Adailton Santos de Oliveira\",\r\n    \"valorConsulta\": 400.44\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/agruparConsultas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agruparConsultas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
